@@ -9,13 +9,6 @@ html {
     --highlight: #fb8500;
 }
 
-body[data-theme="dark"] {
-    --background: #8ecae6;
-    --primary: #253A52;
-    --link: #1348da;
-    --highlight: #1348da;
-}
-
 body {
     color: var(--primary);
     background: var(--background);
