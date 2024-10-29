@@ -1,3 +1,5 @@
+// https://www.w3schools.com/js/js_date_methods.asp
+
 // Retreives system date and formats it
 function date() {
     let date = new Date();
@@ -33,16 +35,16 @@ function clock() {
         meridem = "AM"
     }
 
-    // Determine day or night
+    // Determine day or night and change elements accordingly
 
     if (hour >= 6 && meridem == "PM" || hour <= 4 && meridem == "AM") {
         cycle = "night";
-        document.getElementById("day-night-image").src = "night.jpg";
+        document.getElementById("day-night-image").src = "../assets/night.jpg";
         document.getElementById("day-night-image").alt = "Image of the starry sky. All rights to NASA."
         document.getElementById("day-night-message").innerHTML = nightMessage;
     } else {
         cycle = "day";
-        document.getElementById("day-night-image").src="day.jpg";
+        document.getElementById("day-night-image").src="../assets/day.jpg";
         document.getElementById("day-night-image").alt = "Image of Puebla, Mexico."
         document.getElementById("day-night-message").innerHTML = dayMessage;
     }

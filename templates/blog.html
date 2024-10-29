@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link href="../css/styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="../templates/index.html">Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="../templates/index.html">Home</a>
+                        <a class="nav-item nav-link active" href="../templates/blog.html">Blog / Projects</a>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+        <main>
+            <div class="spacer7"></div>
+            <h1>Blog</h1>
+            <h6>Recent projects</h6>
+            <div class="spacer7"></div>
+            <div class="center">
+                <h5>Filters</h5>
+                </div class="flex-container">
+                    <ul class="button-list">
+                        <li><button type="button" id="remove-filters">Show All</button></li>
+                        <li><button type="button" id="c-filter">C / C++</button></li>
+                        <li><button type="button" id="html-filter">Web</button></li>
+                        <li><button type="button" id="java-filter">Java</button></li>
+                        <li><button type="button" id="python-filter">Python</button></li>
+                        <li><button type="button" id="sql-filter">SQL</button></li>
+                        <li><button type="button" id="misc-filter">Miscellaneous</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spacer7"></div>
+            <div class="timeline">
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">Today</h4>
+                            <p id="date">10/10/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/day.jpg" class="img-fluid bright-image" id="day-night-image" alt="Sunny sky of Puebla, Mexico.">
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="misc">Miscellaneous</li>
+                            </ul>
+                            <p id="clock">10:20:35 PM</p>
+                            <p>Beautiful <span id="day-night">day</span>, isn't it?</p>
+                            <p id="day-night-message">What will you choose to do with it?</p>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title"> SQL murder mystery </h4>
+                            <p>10/23/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/sqlMisterySchema.png" class="img-fluid bright-image" alt="schema of sql database">
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="sql">SQL</li>
+                            </ul>
+                            <p>After completing the problem set 9 from CS50 (Fiftyville), I liked the problem so much that I also completed the activity
+                                offered by Knight Lab. This also involves quering a database to find the perpetrator of a crime.
+                            </p>
+                            <p>I really like how clever the idea of making a game using SQL is. It makes it not just a learning tool but also a fun experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">This webpage</h4>
+                            <p>10/13/2024</p>
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="html">Web</li>
+                                <li>Development</li>
+                            </ul>
+                            <p>My most recent project is this webpage, I already had experience building my own website but this one looks
+                                better and
+                                it took me less time, so that is an improvement. The other site I made was my previous portfolio website, which I
+                                hosted in github pages.
+                                I'm happy that I was able to build this website without having to follow a tutorial, yay!</p>
+                            <p>A few websearches and looking at other websites was enough. Let this be proof of my progress.</p>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title"> Python coin counter </h4>
+                            <p>9/26/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/coinsDetected.png" class="img-fluid bright-image" alt="coins outlined by software">
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="python">Python</li>
+                            </ul>
+                            <p>Using shape detection in the OpenCV library in python, detect coins based on their size and count the
+                                number of coins present. In the future I might train an AI to detect coins without relying in the
+                                inaccuracies of camera angles and distances.
+                            </p>
+                            <p>Downloading a pretrained data set is also an option to increase the effectiveness of the program,
+                                but making one myself would be a good way to learn more about the topic.
+                            </p>
+                            <ul class="socials">
+                                <li>
+                                    <a
+                                    href="https://github.com/etiennebravo/coin_detection"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <span class="link-icon">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">Article date check</h4>
+                            <p>9/15/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/sortHackerNews.png" class="img-fluid" alt="snippet of code">
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="html">Web</li>
+                                <li>Automation</li>
+                            </ul>
+                            <p>I made this project as a part of a technical test for a job application. The program consists in checking if the first 100 aticles of Hacker News were in sorted order using
+                                a library for web automation called Playwright by Microsoft within Java script.
+                            </p>
+                            <p>
+                                The task was simple so i decided to add functionality such as choosing the
+                                amount of articles to be read and showing which ones are not in sorted order.
+                                Out of respect for the company I will not be sharing the code.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">Database GUI</h4>
+                            <p>9/4/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/database.png" class="img-fluid bright-image" alt="Graphical interface listing various items.">                  
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="java">Java</li> <li class="sql">SQL</li>
+                            </ul>
+                            <p>This project is a comprehensive application that integrates database operations within a basic graphical user interface (GUI).
+                                It allows users to interact with the database, performing various operations such as data retrieval, insertion, updating, and deletion.
+                            </p>
+                            <p>It also includes UI design that caters to users such as warning the user what elements are they deleting and text that shows the
+                                status of a sql query.
+                            </p>
+                            <ul class="socials">
+                                <li>
+                                    <a
+                                    href="https://github.com/etiennebravo/Database-Lookup"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <span class="link-icon">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">Retro Game</h4>
+                            <p>8/13/2024</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/retro_game.png" class="img-fluid bright-image" alt="Pixelated videogame">                  
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="c">C++</li>
+                            </ul>
+                            <p>A game made with an optical illusion, from 2D to 3D à la Wolfenstein 3D from last century.
+                                Using C++ and the power of math to cast rays in a 2D plane and obtain data to create a "fake" 3D game.
+                                The game was created along with SDL2 to process the inputs and openGL to handle the creation of a window,
+                                but the graphics themselves were made in a similar fashion to some of the first fps games that were created.
+                            </p>
+                            <p>
+                                The "game" is just a tech demo, it does not contain any significant gameplay.
+                            </p>
+                            <ul class="socials">
+                                <li>
+                                    <a
+                                    href="https://github.com/etiennebravo/Ray_caster"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <span class="link-icon">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+                <div class="project-article fade-in-up-on-scroll">
+                    <div class="flex-container">
+                        <div class="column1">
+                            <h4 class="project-title">Infix to postfix calculator</h4>
+                            <p>12/10/2023</p>
+                            <div class="spacer4"></div>
+                            <img src="../assets/postfix_calc.png" class="img-fluid" alt="Command line interface for calculator.">                  
+                        </div>
+                        <div class="column2">
+                            <ul class="tag-list">
+                                <li class="c">C++</li>
+                            </ul>
+                            <p>Calculator that uses the postfix notation to process data. Postfix notation is a more efficient way to handle large quantities of opererations.
+                                The calculator converts the infix notation (Human notation) into a more machine friendly notation with the use of a doubly linked list.
+                            </p>
+                            <p>
+                                Preprocessing the information and storing it in memory adds a little overhead but it makes up in efficiency when handling intensive tasks.
+                                Specially when processing massive amounts of data.
+                            </p>
+                            <ul class="socials">
+                                <li>
+                                    <a
+                                    href="https://github.com/etiennebravo/posfix_calculator"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                        <span class="link-icon">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="spacer6"></div>
+                </div>
+            </div>
+
+            <footer>
+                <hr class="horizontal-line">
+                <div class="flex-container">
+                    <div class="center center-mobile">
+                        <ul class="socials">
+                            <li>
+                                <a href="mailto:bravoetienne01@gmail.com">
+                                    <span class="link-icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                               <a
+                                  href="https://www.linkedin.com/in/etienne-bravo?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BySxYS6H3TGy0yjwpw%2B02jg%3D%3D"
+                                  target="_blank"
+                                  rel="noopener noreferrer">
+                                  <span class="link-icon">
+                                     <i class="fa-brands fa-linkedin"></i>
+                                  </span>
+                               </a>
+                            </li>
+                            <li>
+                               <a
+                               href="https://github.com/etiennebravo"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                  <span class="link-icon">
+                                     <i class="fa-brands fa-github"></i>
+                                  </span>
+                               </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <span class="link-icon">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                   </span>
+                                </a>
+                             </li>
+                         </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/timeTracker.js"></script>
+        <script src="../js/fade_in_on_scroll.js"></script>
+        <script src="../js/filter.js"></script>
+    </body>
+</html>
