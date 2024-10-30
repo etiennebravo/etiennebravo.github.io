@@ -577,6 +577,7 @@ img {
     animation: 1s both fadeInDown;
 }
 
+/* fade from right might produce undesired overflow */
 @keyframes fadeInRight {
     from {
         transform: translateX(50px);
