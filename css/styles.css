@@ -438,11 +438,6 @@ img {
     background-color: #f8f9fa;
 }
 
-.horizontal-line {
-    color: var(--bs-white);
-    opacity: 100;
-}
-
 /* center elements */
 
 .center {
