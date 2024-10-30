@@ -67,7 +67,7 @@ p, li, label{
 }
 
 a {
-    color: var(--bs-orange);
+    color: var(--bs-yellow);
     font-weight: 700;
     text-decoration: none;
 }
@@ -170,7 +170,6 @@ img {
 .socials a { 
     display: inline-flex;
     flex-direction: column;
-    color: var(--bs-orange);
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 700;
@@ -179,8 +178,8 @@ img {
 
 .link-icon {
     margin-block-start: 0.5rem;
-    background: var(--bs-orange);
-    color: var(--bs-dark);   
+    background: var(--bs-yellow);
+    color: var(--bs-dark);  
     width: 3rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -304,6 +303,14 @@ img {
 }
 
 /* divisors */
+
+hr {
+    display: block;
+    height: 2px;
+    width: 100%;
+    color: var(--bs-white);
+    opacity: 0.5;
+}
 
 .section-division {
     background-image: url("../assets/homepage_divisor.png"), linear-gradient(0deg, transparent 40vw, #f8f9fa 0);
