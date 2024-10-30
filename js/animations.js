@@ -53,7 +53,7 @@ function dynamicImage(elementID, primaryImage, secondaryImage) {
     function updateImageBasedOnWidth() {
         let image = document.getElementById(elementID);
         if (image) {
-            if (window.innerWidth <= MAX_WIDTH) {
+            if (window.innerWidth < MAX_WIDTH) {
                 image.src = secondaryImage;
             } else {
                 image.src = primaryImage;

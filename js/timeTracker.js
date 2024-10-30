@@ -14,7 +14,7 @@ function date() {
     element.innerHTML = currentDate;
 }
 
-// Retreives system time and formats it
+// Retreives system time and formats html accordingly
 function clock() {
     // Test night time: 'December 10, 2024 03:24:00'
     let time = new Date();

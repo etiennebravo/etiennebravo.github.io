@@ -8,7 +8,7 @@ mouseDragScroll(skillsSection);
 mouseDragScroll(imagesSection);
 
 /**
- * @summary Enables dragging with mouse within a overflowing element
+ * @summary Enables dragging with mouse within an overflowing element
  * @param {HTMLElement} container element ID
  */
 function mouseDragScroll(container) {

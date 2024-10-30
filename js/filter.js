@@ -2,9 +2,9 @@
 
 /**
  * @summary Show elements with the selected tag
- * @param {*} filterButtonId id of the button
- * @param {*} fadeClassName class that identifies elements that fade, see fade_in_on_scroll for more info.
- * @param {*} tagClassName elements with this tag will be shown
+ * @param {HTMLElement} filterButtonId id of the button
+ * @param {string} fadeClassName class that identifies elements that fade, see fade_in_on_scroll for more info.
+ * @param {string} tagClassName elements with this tag will be shown
  */
 function handleFilterButtonClick(filterButtonId, fadeClassName, tagClassName) {
     const projectArticles = document.getElementsByClassName("project-article");
@@ -50,7 +50,7 @@ function handleFilterButtonClick(filterButtonId, fadeClassName, tagClassName) {
 /**
  * 
  * @param {HTMLElement} filterButtonId id of the button
- * @param {*} fadeClassName 
+ * @param {string} fadeClassName css class of the animation that identifies fading elements
  */
 function removeFilters(filterButtonId, fadeClassName) {
     const projectArticles = document.getElementsByClassName("project-article");
