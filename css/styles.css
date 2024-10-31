@@ -555,24 +555,6 @@ hr {
     color: white !important;
 }
 
-/* apply these to elements that will fade */
-
-.fade-on-up-on-scroll {
-    opacity: 0;
-}
-
-.fade-on-down-on-scroll {
-    opacity: 0;
-}
-
-.fade-on-left-on-scroll {
-    opacity: 0;
-}
-
-.fade-on-right-on-scroll {
-    opacity: 0;
-}
-
 /* fade in and out animations */
 
 @keyframes fadeInUp {
