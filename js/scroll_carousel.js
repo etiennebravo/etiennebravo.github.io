@@ -8,7 +8,7 @@ mouseDragScroll(skillsSection);
 mouseDragScroll(imagesSection);
 
 /**
- * @summary Enables dragging with mouse within an overflowing element
+ * @summary Enables dragging with mouse within overflowing element
  * @param {HTMLElement} container element ID
  */
 function mouseDragScroll(container) {
@@ -19,7 +19,7 @@ function mouseDragScroll(container) {
     container.addEventListener('mousedown', (e) => {
         isDown = true;
         container.classList.add('active');
-        // prevents highlighting text, messes up with selecting text (not good for screen readers)
+        // prevents highlighting text (not good for screen readers)
         e.preventDefault(); 
         startX = e.pageX - container.offsetLeft;
         scrollLeft = container.scrollLeft;
