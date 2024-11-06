@@ -624,19 +624,7 @@ hr {
         opacity: 1;
     }
 
-    .fade-in-down {
-        animation: none;
-    }
-
-    .fade-in-up {
-        animation: none;
-    }
-
-    .fade-in-left {
-        animation: none;
-    }
-
-    .fade-in-right {
+    .fade-in-down, .fade-in-up, .fade-in-left, .fade-in-right {
         animation: none;
     }
 }

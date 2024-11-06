@@ -44,5 +44,4 @@ function resetFadeOnScroll(selector, fade) {
 // Call the function
 fadeInUpOnScroll(".fade-in-up-on-scroll", "fade-in-up");
 fadeInUpOnScroll(".fade-in-down-on-scroll", "fade-in-down");
-fadeInUpOnScroll(".fade-in-right-on-scroll", "fade-in-right");
 fadeInUpOnScroll(".fade-in-left-on-scroll", "fade-in-left");
