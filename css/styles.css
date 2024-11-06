@@ -556,6 +556,9 @@ hr {
 }
 
 /* fade in and out animations */
+.fade-in-up-on-scroll {
+    opacity: 0;
+}
 
 @keyframes fadeInUp {
     from {
