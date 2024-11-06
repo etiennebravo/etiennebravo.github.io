@@ -6,23 +6,17 @@ function fadeInUpOnScroll(selector, fade) {
     const elementsToFadeInUpOnScroll = document.querySelectorAll(selector);
 
     if (elementsToFadeInUpOnScroll) {
-        // Animate elements that appear on the initial page load
-        window.addEventListener("DOMContentLoaded", function() {
-            elementsToFadeInUpOnScroll.forEach(function(element) {
-                if (window.scrollY + window.innerHeight >= element.offsetTop) {
-                    element.classList.add(fade);
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(fade);
+                    observer.unobserve(entry.target);  // Unobserve once the animation is applied
                 }
             });
-        });
+        }, { threshold: 0.1 });  // Adjust the threshold as needed
 
-        // Animate elements that appear when scrolling
-        window.addEventListener("scroll", function() {
-            elementsToFadeInUpOnScroll.forEach(function(element) {
-                // Elements animate only once
-                if (window.scrollY + window.innerHeight >= element.offsetTop) {
-                    element.classList.add(fade);
-                }
-            });
+        elementsToFadeInUpOnScroll.forEach(element => {
+            observer.observe(element);
         });
     }
 }

@@ -556,7 +556,7 @@ hr {
 }
 
 /* fade in and out animations */
-.fade-in-up-on-scroll {
+.fade-in-up-on-scroll, .fade-in-down-on-scroll, .fade-in-left-on-scroll, .fade-in-right-on-scroll {
     opacity: 0;
 }
 
@@ -620,11 +620,23 @@ hr {
 /* disable fade animations */
 
 @media (prefers-reduced-motion) {
+    .fade-in-up-on-scroll, .fade-in-down-on-scroll, .fade-in-left-on-scroll, .fade-in-right-on-scroll {
+        opacity: 1;
+    }
+
     .fade-in-down {
         animation: none;
     }
 
     .fade-in-up {
+        animation: none;
+    }
+
+    .fade-in-left {
+        animation: none;
+    }
+
+    .fade-in-right {
         animation: none;
     }
 }
