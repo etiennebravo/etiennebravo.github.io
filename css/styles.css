@@ -374,7 +374,7 @@ hr {
 
 .irregular-image-grid .item1 { grid-column: 15 / 24; grid-row: 1;}
 .irregular-image-grid .item2 { grid-column: 7 / 13; grid-row: 3; margin-top: -18rem;}
-.irregular-image-grid .item3 { grid-column: 1 / 9; grid-row: 2; margin-top: -18rem; z-index: 1; opacity: 1;}
+.irregular-image-grid .item3 { grid-column: 1 / 9; grid-row: 2; margin-top: -18rem; z-index: 1;}
 .irregular-image-grid .item4 { grid-column: 15 / 21; grid-row: 2;}
 
 .irregular-image-grid .item3 p {
