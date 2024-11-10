@@ -124,7 +124,6 @@ img {
     text-align: center;
     padding-top: 1rem;
     color: var(--bs-dark);
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #eyebrow {
@@ -153,7 +152,6 @@ img {
 
 .subtitle {
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* socials */
