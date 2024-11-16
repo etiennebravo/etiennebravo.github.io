@@ -489,7 +489,7 @@ hr {
 
 @media (max-width: 767px) {
     .project-title::before {
-        left: -50px;
+        left: -44px;
     }
 }
 
