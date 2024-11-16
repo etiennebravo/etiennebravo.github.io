@@ -124,6 +124,7 @@ img {
     text-align: center;
     padding-top: 1rem;
     color: var(--bs-dark);
+    background-color: var(--bs-gray-100);
 }
 
 #eyebrow {
