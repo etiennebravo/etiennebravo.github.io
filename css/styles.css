@@ -282,18 +282,22 @@ img {
 
 #scroll-skills {
     grid-template-columns: repeat(4, calc(40% - 40px));
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #scroll-images {
     grid-template-columns: repeat(5, calc(40% - 40px));
     padding-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .hs:active {
     cursor: grabbing;
 }
 
-@media(width < 767px) {
+@media(width < 769px) {
     #scroll-skills {
         grid-gap: var(--gutter-mobile);
         grid-template-columns: repeat(4, calc(80%));
@@ -302,6 +306,13 @@ img {
     #scroll-images {
         gap: var(--gutter-mobile);
         grid-template-columns: repeat(5, calc(70% - 40px));
+    }
+}
+
+@media(width < 426px) {
+    #scroll-images {
+        gap: var(--gutter-mobile);
+        grid-template-columns: repeat(5, calc(90% - 40px));
     }
 }
 
