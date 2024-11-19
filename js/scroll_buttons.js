@@ -1,12 +1,12 @@
 scroll_button_event('#scroll-skills');
-scroll_button_event('#scroll-images', 0.50);
+scroll_button_event('#scroll-images');
 
 /**
  * 
  * @param {HTMLElement} elementId 
  * @param {Number} scroll_ratio Amount of scroll desired (From 0 to 1)
  */
-function scroll_button_event(elementId, scroll_ratio=1) {
+function scroll_button_event(elementId) {
     document.addEventListener('DOMContentLoaded', () => {
 
         // Constants
