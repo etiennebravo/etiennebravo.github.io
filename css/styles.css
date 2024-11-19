@@ -274,10 +274,21 @@ img {
 .hs {
     display: grid;
     gap: var(--gutter);
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
     padding-left: 0;
     cursor: grab;
+}
+
+.scroll-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacer-1);
+}
+
+.scroll-buttons > button {
+    background-color: transparent;
+    color: var(--bs-white);
+    border: none;
 }
 
 #scroll-skills {
