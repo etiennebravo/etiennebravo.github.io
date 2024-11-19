@@ -318,12 +318,20 @@ img {
         gap: var(--gutter-mobile);
         grid-template-columns: repeat(5, calc(70% - 40px));
     }
+
+    .hs {
+        overflow-x: scroll;
+    }
 }
 
 @media(width < 426px) {
     #scroll-images {
         gap: var(--gutter-mobile);
         grid-template-columns: repeat(5, calc(90% - 40px));
+    }
+    
+    .hs {
+        overflow-x: scroll;
     }
 }
 
