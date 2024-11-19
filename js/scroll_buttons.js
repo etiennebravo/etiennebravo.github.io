@@ -8,6 +8,7 @@ scroll_button_event('#scroll-images');
  */
 function scroll_button_event(elementId) {
     document.addEventListener('DOMContentLoaded', () => {
+        const REM_IN_PX = 16
 
         // Constants
         const skill_scroll = document.querySelector(elementId);
@@ -16,12 +17,12 @@ function scroll_button_event(elementId) {
         let gutter = 0;
 
         if (document.offsetWidth >= 768) {
-            gutter = 64;  // 4 rem    
+            gutter = REM_IN_PX * 4;  // 4 rem    
         } else { 
-            gutter = 32;  // 2 rem
+            gutter = REM_IN_PX * 2;  // 2 rem
         }
 
-        const scroll_amount = skill_scroll.children[0].offsetWidth + gutter; // 4rem = gutter width
+        const scroll_amount = skill_scroll.children[0].offsetWidth + gutter;
 
         // listen to right button
         scroll_right.addEventListener('click', () => {
