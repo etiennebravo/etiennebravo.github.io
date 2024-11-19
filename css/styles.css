@@ -293,15 +293,15 @@ img {
 
 #scroll-skills {
     grid-template-columns: repeat(4, calc(40% - 40px));
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 #scroll-images {
     grid-template-columns: repeat(5, calc(40% - 40px));
     padding-bottom: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .hs:active {

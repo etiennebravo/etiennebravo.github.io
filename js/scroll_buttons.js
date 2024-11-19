@@ -13,7 +13,7 @@ function scroll_button_event(elementId) {
         const skill_scroll = document.querySelector(elementId);
         const scroll_right = document.querySelector(`${elementId}-right`);
         const scroll_left = document.querySelector(`${elementId}-left`);
-        const scroll_amount = skill_scroll.children[0].offsetWidth + 70; // 70 = 4 rem + some more px
+        const scroll_amount = skill_scroll.children[0].offsetWidth + 64; // 4rem = gutter width
 
         // listen to right button
         scroll_right.addEventListener('click', () => {
